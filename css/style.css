@@ -197,12 +197,65 @@ h3{
 /*--------------------- Bibliography -----------------*/
 
 .biblio{
-    background-color: #141414;
+    background-color: #fafafa;
 }
 
 .biblio h2{
-    color: #fafafa;
+    color: #141414;
 }
+
+.biblio li{
+    padding: 1.5em;
+    line-height: inherit;
+    font-family: 'Arvo', serif;
+    font-size: 0.8em;
+    list-style: none;
+}
+
+/*--------------------- FOOTER-----------------*/
+
+footer {
+    background-color: #141414;
+    text-align: center;
+    font-size: 0.707em;
+    padding: 2em 0 2em 0;
+    color: #fafafa;
+        
+}
+
+.socials {
+	position: relative;
+	margin: 0 auto;
+}
+
+.socials ul {
+	margin: 0;
+	padding: 0;}
+
+.socials li {
+	margin: 0 15px;
+	padding: 0;
+	list-style: none; 
+	display: inline-block;}
+	
+.socials a:link {
+	border-bottom: none;}
+
+.socials img {
+	opacity: 0.5;
+    border: none;
+    width: 25px;
+    height: 25px;
+	}
+	
+ .socials img:hover{
+		opacity: 1.0;
+		border-bottom: none; 
+		transition: all 0.3s ease-in-out; 
+				}	
+
+
+
 /*----------------- ADDING FLEXBOX ------------------*/
     
 .container_1{
@@ -392,12 +445,9 @@ nav a:hover {
     transition: all 0.4s ease-in-out; 
 }
 
-/*------------------- LISTS ------------------*/
 
-li{
-    display: inline;
-    padding: 1.5em;
-}
+
+
 
 /*------------------- IMAGES ------------------*/
 
@@ -420,4 +470,10 @@ img{
 .paula_img{
     width: 250px;
     height: auto;
+}
+
+.home{
+    width: 25px;
+    height: auto;
+    padding: 0;
 }
