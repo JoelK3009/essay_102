@@ -10,43 +10,54 @@
 
 /*---------------------Header -----------------*/
 header{
+    height: 100vh;
     width: 100%;
-    height: 250px;
-    background-image: url(../images/pentagram-bw.png);
-    background-position: 25% 25% 25% 25%;
-    background-size: cover; 
-    
-    
+    background: url(../images/pentagram_bw.png) no-repeat center;
+   /* background-position: 25% 25% 25% 25%;
+    background-size: cover; */
 }
 
 /*--------------------- Body -----------------*/
 
 body{
-    width: 80%;
+    width: 100%;
     max-width: 100%;
     margin: auto;
     background: #fafafa;
     color: #333;
-    font-family: 'Arvo', serif;
+    font-family: 'Helvetica', serif;
 }
 
 p{
+    font-size: 16px;
     line-height: 1.5em;
+    margin: 0.7em 0;
 }
+
+
+section {
+    margin: auto;
+    width: 80%;
+    max-width: 860px}
 
 
 /*--------------------- Specified Styles -----------------*/
 
+/* #D63234 */
 
 h1, h2, h3, h4 {
     font-weight: normal;
     margin-bottom: 0.5em;}
 
+header h1 {padding-top: 4em}
+
 h1{
     color: #D63234;
     text-align: center;
     padding-top: 1em;
-    font-size: 2.827em;
+    font-size: 70px;
+    font-weight: bolder;
+    font-style: italic;
 }
 
 header h2{
@@ -57,52 +68,282 @@ h2{
     color: #141414;
     text-align: center;
     padding-top: 0.5em;
-    font-size: 1.999em;
+    font-size: 32px;
+    font-weight: bold;
 }
 
 
 h3{
     color: #141414;
     text-align: left;
-    padding-top: 0.5em;
+    padding-top: 1em;
     font-size: 1.414em;
+    font-weight: bold;
 }
 
-blockquote{
-    line-height: 1.5em;
-    font-size:1em;
-}
+
 /*--------------------- Intro -----------------*/
-
+.intro{
+    background-color:#fafafa; 
+}
 .intro h2{
     text-align: center;
+    color: #141414;
 }
+
+.intro p{
+    color: #141414;
+    padding: 1em;
+}
+
+
+/*--------------------- Pentagram -----------------*/
+
+.pentagram{
+    background-color: #141414; 
+}
+
+.pentagram h2{
+    text-align: center;
+    color: #fafafa;
+}
+
+.pentagram p{
+    color: #fafafa;
+    padding: 1em;
+}
+
 /*--------------------- Work -----------------*/
 
 .work{
     height: 200px;
+    background-color:#fafafa;
 }
 
 .work p{
     text-align: center;
 }
-/*--------------------- Partners -----------------*/
 
-.partners{
-    height: 200px;
+.wb {
+    background-color: #141414;
 }
 
-.partners p{
-    text-align: center;
+
+
+.wb h3{
+    color: #fafafa;
+    padding: 1em, 1em, 1em, 0em;
+}
+
+
+.wb p{
+    color: #fafafa;
+    padding: 1em;
+}
+
+.slack{
+    background-color: #141414;
+}
+
+.slack h3{
+    color: #fafafa;
+    padding: 1em, 1em, 1em, 0em;
+}
+
+.slack p{
+    color: #fafafa;
+    padding: 1em;
+}
+
+.epcot{
+    background-color: #fafafa;
+}
+
+.epcot h3{
+    color: #141414;
+    padding: 1em, 1em, 1em, 0em;
+}
+
+.epcot p{
+    color: #141414;
+    padding: 1em;
+}
+/*--------------------- Competition -----------------*/
+
+.competition{
+    background-color: #fafafa;
+}
+
+.competition p{
+    color: #141414;
+    padding: 1em;
+}
+
+
+/*--------------------- Conclusion -----------------*/
+
+.conc{
+    background-color: #141414;
+}
+
+.conc p{
+    color: #fafafa;
+    padding: 1em;
+}
+
+.conc h2{
+    color: #fafafa;
+}
+/*--------------------- Bibliography -----------------*/
+
+.biblio{
+    background-color: #141414;
+}
+
+.biblio h2{
+    color: #fafafa;
 }
 /*----------------- ADDING FLEXBOX ------------------*/
     
+.container_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.container_2{
+    display: flex;
+}
+
+.container_3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.box_1{
+    flex: 4;
+    flex-basis: 50px;
+   /* padding-left: 50px; */
+}
+
+.box_2{
+    flex: 1;
+  /*  padding-left: 100px; */
+}
+
+.box_3{
+    flex: 3;
+    flex-basis: 50px;
+}
+
+
+.box_4{
+    flex: 1;
+}
+
+.box_5{
+    flex: 4;
+    flex-basis: 50px;
+   /* padding-left: 50px; */
+}
+
+.box_6{
+    flex: 1;
+    align-content: center;
+  /*  padding-left: 100px; */
+}
+
+
+.box_7{
+    flex: 4;
+    flex-basis: 50px;
+   /* padding-left: 50px; */
+}
+
+.box_8{
+    flex: 1;
+    align-content: center;
+  /*  padding-left: 100px; */
+}
+
+.box_9{
+    flex: 4;
+    flex-basis: 50px;
+   /* padding-left: 50px; */
+}
+
+.box_10{
+    flex: 1;
+    align-content: center;
+  /*  padding-left: 100px; */
+}
+
+.box_11{
+    flex: 2;
+    align-content: left;
+}
+
+.box_12{
+    flex: 2;
+    align-content: right;
+}
+
+.box_13{
+    flex: 2;
+    align-content: left;
+}
+
+.box_14{
+    flex: 1;
+    
+}
+
+/*--------------------- Block Quotes -----------------*/
+
+.bq {
+    background-color: #444444;
+    
+}
+
+.bq blockquote{
+    font-family: 'Arvo', serif;
+    line-height: 1.5em;
+    font-size:1.5em;
+    color: #fafafa;
+    padding: 1em;
+    font-style: italic;
+}
+
+.bq cite{
+    font-family: '', serif;
+    font-size: 0.75em;
+}
 
 
 /*--------------------- STYLING LINKS -----------------*/
 a {
-    color: #8F0040;
+    color: #D63234;
     text-decoration: none;
 }
 
@@ -114,7 +355,7 @@ a:hover {
 
 /*------------------- NAVIGATION ------------------*/
 nav {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     margin:0;
@@ -128,7 +369,7 @@ nav {
 nav ul {
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.8px;
 }
 
 nav ul li {
@@ -148,7 +389,7 @@ nav a:visited {
 nav a:hover {
     border-bottom: none;
     color: #D63234;
-    transition: all 0.3s ease-in-out; 
+    transition: all 0.4s ease-in-out; 
 }
 
 /*------------------- LISTS ------------------*/
@@ -163,9 +404,20 @@ li{
 img{
     width: 250px;
     height: 250px;
-    padding: 1.5em;
+    padding-bottom: 25px;
 }
 
 .wb_img{
-    align-content: center;
+    width: 220px;
+    height: 270px;
+}
+
+.epcot_img{
+    width: 250px;
+    height: auto;
+}
+
+.paula_img{
+    width: 250px;
+    height: auto;
 }
