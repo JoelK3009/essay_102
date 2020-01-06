@@ -31,7 +31,7 @@ body{
 p{
     font-size: 16px;
     line-height: 1.5em;
-    margin: 0.7em 0;
+    margin: 1em 0;
 }
 
 
@@ -123,7 +123,7 @@ h3{
 .work p{
     text-align: left;
     padding: 16px;
-    margin: 0;
+    margin: 0 0 1em 0;
 }
 
 .wb {
@@ -213,6 +213,23 @@ h3{
     font-size: 0.8em;
     list-style: none;
 }
+/*--------------------- Figure -----------------*/
+.black{
+    text-align: center;
+    font-size: 0.707em;
+    padding: 0.5em 0 0.5em 0;
+    color: #fafafa;
+        
+}
+
+.white{
+    text-align: center;
+    font-size: 0.707em;
+    padding: 0.5em 0 0.5em 0;
+    color: #141414;
+        
+}
+
 
 /*--------------------- FOOTER-----------------*/
 
@@ -415,6 +432,21 @@ footer {
 }
 
 
+.bq_2 blockquote{
+    font-family: 'Arvo', serif;
+    line-height: 1.5em;
+    font-size:1.5em;
+    color: #141414;
+    padding: 1em;
+    font-style: italic;
+}
+
+.bq_2 cite{
+    font-family: '', serif;
+    font-size: 0.75em;
+}
+
+
 /*--------------------- STYLING LINKS -----------------*/
 a {
     color: #D63234;
@@ -476,8 +508,8 @@ nav a:hover {
 
 img{
     width: 250px;
-    height: 250px;
-    padding-bottom: 25px;
+    height: auto;
+    padding-bottom: 10px;
     display: flex;
 }
 
@@ -509,3 +541,4 @@ img{
     height: auto;
     padding: 1.5em 0 1.5em 50em ;
 }
+
